@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0 viewport-fit=cover">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+  <style>
+    html {
+        /* block body's background propagation */
+        background: #fff;
+    }
+    body {
+      font-family: arial,sans-serif;
+      font-size: 90%;
+      background: #fff;
+      padding: 1em;
+      /* make it cover the full canvas */
+      margin: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        /* This is a hack, it might be eventually better to just to swap the color variables. */
+        body {
+            filter: invert(95%) hue-rotate(180deg) brightness(0.95);
+        }
+    }
+  </style>
+<title>Lazy Bear Labs</title>
+</head>
+<body>
+  <h1>
+    Lazy Bear Labs  
+  </h1>
+</body>
+</html>
