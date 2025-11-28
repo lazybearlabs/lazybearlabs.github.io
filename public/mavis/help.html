@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0 viewport-fit=cover">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <title>
+            Lazy Bear Labs
+        </title>
+    </head>
+    <body>
+        <header>
+            <a href="/index.html"><img src="/img/lazy-bear-labs-masthead-logo.svg" alt="Lazy Bear Labs" style="height: 4rem;"></a>
+            <div class="spacer">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Mavis Help
+            </h1>
+            <p>
+                Mavis has a few features designed to make composing messages easier. This application was designed and built for a specific person who was a very competent typist, but who also possessed a distinct antipathy for computing technology.
+            </p>
+            <p>
+                The default settings and capabilities were strongly influenced by her needs and abilities as well as my best guesses on how to make living with this technology easier for her. There are many possible ways to modify and improve the software for specific needs.
+            </p>
+            <h1>
+                Text To Speech Intro
+            </h1>
+            <p>
+                You can be lazy. Text to speech does not care about capitalization and usually doesn't care much about homophones either - their, they're and there are all pronounced about the same.
+            </p>
+            <p>
+                Sometimes there are subtle differences with some punctuation, like hyphens and commas. Unfortunately, right now most of the voices don't recognize the difference between <code>"Hello."</code>, <code>"Hello?"</code> and <code>"Hello!"</code> -- that's a current limitation of the Apple Speech synthesizer.
+            </p>
+            <p>
+                If there is a persistent problem, there are ways to tweak pronunciation inside the voice synthesizer. See the section on <strong>Pronunciations</strong>.
+            </p>
+            <h1>
+                Keyboard Navigation
+            </h1>
+            <p>
+                You shouldn’t need to use menus with Mavis most of the time. Hunting through menus takes your fingers off the home row and ends up slowing you down.
+            </p>
+            <p>
+                Whatever you type in the composition text will be spoken when you press <strong>Return</strong>.
+            </p>
+            <p>
+                The last 10 phrases are remembered and you can quickly access them using the <strong>Command</strong> key ⌘ and up ↑ and down ↓ arrow keys.
+            </p>
+            <p>
+                Swiping items in the history list will allow you to delete a history item.
+            </p>
+            <p>
+                All the standard Mac keyboard navigation tricks work.
+            </p>
+            <p>
+                ⌘← and ⌘→ (<strong>Command</strong> with the left or right arrow keys) will let you skip to the beginning or end of the composition.
+            </p>
+            <p>
+                ⌥← and ⌥→ (<strong>Option</strong> with the left or right arrow keys) will let you skip backward and forward word by word.
+            </p>
+            <p>
+                ⌥ Delete (Option with Delete) will delete a "word" backwards.
+            </p>
+            <h1>
+                Message History
+            </h1>
+            <p>
+                If you need to quickly repeat the last message, <strong>Command</strong> key and Return <strong>⌘-Return</strong> will respeak the last message.
+            </p>
+            <p>
+                Alternatively, <strong>Command</strong> key and up arrow <strong>⌘↑</strong> will recall the last message in the history. <strong>Return</strong> will speak it aloud.
+            </p>
+            <h1>
+                Tab Completion
+            </h1>
+            <p>
+                When you press the <strong>Tab</strong> key, Mavis will suggest matching options from the list of preconfigured phrases and available soundbites based on the text already typed. Even small fragments of words can be used and they need not be in order. Matches will be ordered and the best match will be the last in the list, automatically selected.
+            </p>
+            <p>
+                For instance: <code>blinds up</code>
+            </p>
+            <p>
+                Might result in the following suggestions:
+            </p>
+            <ul>
+                <li>
+                    It was nice catching up
+                </li>
+                <li>
+                    Ask me Yes-No questions. It will speed things up.
+                </li>
+                <li>
+                    <strong>Could you raise the blinds up please?</strong>
+                </li>
+            </ul>
+            <p>
+                All of those match some fragment, but the last one matches "best" and would be selected automatically.
+            </p>
+            <p>
+                When the completion menu is showing, you can navigate the completion choices with the up <strong>↑</strong> and down <strong>↓</strong> arrow keys, or press the <strong>Tab</strong> and <strong>Shift-Tab</strong>.
+            </p>
+            <p>
+                The first press of the <strong>Return</strong> key will accept the current highlighted completion, and a second press of <strong>Return</strong> will speak the text aloud.
+            </p>
+            <p>
+                The <strong>Escape</strong> key (<strong>esc</strong> on the top left of your keyboard), cancels the completion menu and selects nothing.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: There is no "best" way to do completions. This mechanism proved simple, fast, predictable and moderately effective. However, there are many ways to potentially alter the behavior.
+                </p>
+            </blockquote>
+            <h1>
+                Phone and FaceTime
+            </h1>
+            <p>
+                If you are on a call, Mavis is ready to help and you can speak with both your voice and the synthesizer.
+            </p>
+            <h1>
+                Speak Sentences Automatically
+            </h1>
+            <p>
+                Mavis can (and does by default) automatically speak each sentence while you type. Technically, it speaks every time the space bar is pressed and the previous sentence ends with a period, exclamation point or question mark.
+            </p>
+            <p>
+                There is a preference for this in the <strong>Chat</strong> menu - <strong>Speak Sentences Automatically</strong>.
+            </p>
+            <h1>
+                Fixing Pronunciations
+            </h1>
+            <p>
+                Under the <strong>Settings</strong> menu select <strong>Edit Pronunciations...</strong>.
+            </p>
+            <p>
+                Each line of this file corrects the pronunciation of a word.
+            </p>
+            <p>
+                For example, this line below tells the voice synthesizer that "Ez" - should be pronounced like "Ezz" - short for Ezra - instead of like E-Z as in "easy."
+            </p>
+            <pre><code>Ez|Ezz
+</code></pre>
+            <p>
+                This can't solve homographs (<em><strong>read</strong> 'em and weep</em> versus <em>I <strong>read</strong> that yesterday</em>), but if that's a problem, let me know. It's not unsolvable, just harder.
+            </p>
+            <p>
+                There is no requirement that pronunciations correction have much to with the orthography. For instance, you can also do:
+            </p>
+            <pre><code>pepsi|coke
+</code></pre>
+            <h1>
+                Soundbites
+            </h1>
+            <p>
+                Soundbites are voice bank recordings that you can play them back exactly as recorded. The catch is that what you type into Mavis must exactly match the phrase.
+            </p>
+            <p>
+                If you don't remember the exact phrase, type "z" and hit the <strong>Tab</strong> key - that will bring up all known phrases. You can scroll through them or type a few characters to show a limited set of matching results.
+            </p>
+            <p>
+                You can disable <strong>Soundbites</strong> in the <strong>Chat</strong> menu.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: Soundbites do not play over Facetime or phone calls.
+                </p>
+            </blockquote>
+            <h1>
+                Noisy Typing
+            </h1>
+            <p>
+                Noisy Typing plays an audible click sound when you type into Mavis. This plays over the speakers to let people know that you are typing "conversationally", not beavering away on some other distraction on your device.
+            </p>
+            <p>
+                You can disable <strong>Noisy Typing</strong> in the <strong>Chat</strong> menu.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: Noisy typing sounds do not play over Facetime or phone calls.
+                </p>
+            </blockquote>
+            <h1>
+                Ring Bell
+            </h1>
+            <p>
+                The Ring Bell button (or <strong>Command-R</strong> or <strong>⌘R</strong>) plays a ringing bell sound to get someone's attention without removing what you've already typed into Mavis.
+            </p>
+            <p>
+                The Double Bell button (or <strong>Command-Shift-R</strong> or <strong>⌘⇧R</strong>) is a litte louder and more aggressive.
+            </p>
+            <p>
+                The bell sounds were selected to be pleasant, but still capable of getting attention
+            </p>
+            <p>
+                The volume of the ring can be adjusted in the <strong>Settings</strong>.
+            </p>
+            <h1>
+                Settings
+            </h1>
+            <p>
+                Adjusting the voice and volumes for various features is possible via the <strong>Settings</strong> panel.
+            </p>
+            <h2>
+                Voice Controls
+            </h2>
+            <p>
+                Choose your voice and set it's basic speaking properties.
+            </p>
+            <h2>
+                Sound Effects
+            </h2>
+            <p>
+                Adjust the volume of various sound effect.
+            </p>
+            <h2>
+                Input
+            </h2>
+            <p>
+                Adjust how keyboard input is handled.
+            </p>
+            <p>
+                Minimum Return Key Delay is the to help prevent accidental double presses of the return key.
+            </p>
+            <h2>
+                Display
+            </h2>
+            <p>
+                You can adjust the size of the font in the compose box to make it easier for you or others to read.
+            </p>
+            <p>
+                You can also adjust how long the display will stay awake when using the app to speak.
+            </p>
+            <h2>
+                Configuration
+            </h2>
+            <p>
+                <strong>Edit Pronunciations</strong> and <strong>Edit Phrases</strong> should be self-explanatory.
+            </p>
+            <p>
+                <strong>Import File</strong> allows you to import several different special files that you have saved on your device.
+            </p>
+            <h3>
+                soundbites.zip
+            </h3>
+            <p>
+                This zip archive can contain any number of sound files that are in the <code>.wav</code> or <code>.m4a</code> formats. The importer uses the name of the each file in the zip archive as the exact text to use when matching a soundbite.
+            </p>
+            <p>
+                For instance <code>Hello.wav</code> and <code>Hello!.wav</code> could be distinct entries. Typing "hello" would only match the first. "hello!" would only match the second.
+            </p>
+            <h3>
+                Removing Soundbites
+            </h3>
+            <p>
+                If you find yourself wanting to remove a particular soundbite, you can use the <strong>File</strong> app to go into <code>On My iPad</code> > <code>Mavis AAC</code> > <code>Soundbites</code> and delete the file from your device.
+            </p>
+            <h2>
+                Export
+            </h2>
+            <p>
+                This lets you send any logged chats via Apple's sharing mechanisms to do some analysis. This mechanism was used to help train early versions of the text correction engine and collect data about patterns of typos or other systematic typing errors.
+            </p>
+            <p>
+                For this to be useful, you have to enable chat logging, which is obviously disabled by default to preserve privacy.
+            </p>
+        </main>
+        <footer>
+            <p>
+                ©2025 Lazy Bear Labs LLC
+            </p>
+        </footer>
+    </body>
+</html>

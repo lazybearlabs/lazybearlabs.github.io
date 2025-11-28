@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0 viewport-fit=cover">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <title>
+            About | Lazy Bear Labs
+        </title>
+    </head>
+    <body>
+        <header>
+            <a href="/index.html"><img src="/img/lazy-bear-labs-masthead-logo.svg" alt="Lazy Bear Labs" style="height: 4rem;"></a>
+            <div class="spacer">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="active">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="product">
+                <div style="min-width: 50%;">
+                    <figure>
+                        <img src="/img/lazy-lab-bear-oil-portrait.jpg" alt="Portrait of our founder" style="max-width: 100%; height: auto;">
+                        <p>
+                        </p>
+                        <figcaption>
+                            Our Founder                            <br>
+ Dr Alistair Abernathy
+                            <br>
+ Digital Alchemist & Gentleman Scientist
+                        </figcaption>
+                    </figure>
+                    <p>
+                    </p>
+                </div>
+                <div class="desc">
+                    <h1>
+                        About Us
+                    </h1>
+                    <p>
+                        We take our craft seriously, but that's not so say we don't have a sense of humor…
+                    </p>
+                    <p>
+                        Lazy Bear Labs grew out of a desire to share small, purpose-built applications with a wider group of users to do the greatest good.
+                    </p>
+                    <p>
+                        If you have questions or comments about our company or software products, please write in! We love to hear from our customers and are happy to help however we can.
+                    </p>
+                    <form id="contactForm" action="https://api.lazybearlabs.com/contact-form" method="POST">
+                        <div class="form-row two-column">
+                            <div class="field">
+                                <label for="name" id="label-name">Name</label>
+                                <input type="text" id="name" name="name" required="">
+                            </div>
+                            <div class="field">
+                                <label for="email" id="label-email">Email</label>
+                                <input type="email" id="email" name="email" required="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="subject" id="label-subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required="">
+                        </div>
+                        <div class="form-row">
+                            <label for="message" id="label-message">Message</label>
+                            <textarea id="message" name="message" rows="5" required=""></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div style="text-align: right;">
+                                <button id="submit" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <script>
+          (function () {
+            const form = document.getElementById("contactForm");
+            const submitButton = document.getElementById("submit");
+
+            // Submit Handler
+            form.addEventListener("submit", async function (e) {
+              e.preventDefault();
+              // Prevent double submit
+              submitButton.disabled = true;
+
+              const formData = new FormData(form);
+
+              try {
+                const action = form.getAttribute("action");
+                const method = form.getAttribute("method");
+                const response = await fetch(action, {
+                  method: method,
+                  body: formData
+                });
+
+                if (!response.ok) {
+                  alert("Error submitting the form.");
+                  submitButton.disabled = true;
+                  return;
+                }
+
+                // Clear fields on success
+                form.reset();
+              } catch (err) {
+                alert("Network or server error.");
+                console.error(err);
+              }
+              submitButton.disabled = false;
+            });
+          })();
+        </script>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                ©2025 Lazy Bear Labs LLC
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0 viewport-fit=cover">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <title>
+            Lazy Bear Labs
+        </title>
+    </head>
+    <body>
+        <header>
+            <a href="/index.html"><img src="/img/lazy-bear-labs-masthead-logo.svg" alt="Lazy Bear Labs" style="height: 4rem;"></a>
+            <div class="spacer">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Tab Completion and Configuration in Detail
+            </h1>
+            <p>
+                This will help you understand what Mavis does when you hit <strong>Tab.</strong>
+            </p>
+            <p>
+                If you press type "z" and then a <strong>Tab</strong>, Mavis will show you all the things you can say with your original soundbites or phrase list.
+            </p>
+            <p>
+                You can edit the phrase list by going to the <strong>Settings</strong> and selecting <strong>Edit Phrases...</strong>.
+            </p>
+            <p>
+                If there is a bit of text and <strong>Completer Mode</strong> (see below) is turned on, it will try to fix typos, spelling errors and simple grammatical issues in one shot.
+            </p>
+            <h1>
+                Completer Mode
+            </h1>
+            <p>
+                This uses a small neural network to try to clean keyboard input with typos, spelling and grammatical mistakes before sending it to the voice synthesizer.
+            </p>
+            <p>
+                Right now it takes about a second and it will give you up to 5 alternate corrections. Studies show that is has a reasonable chance of fixing things and the success rate can likely be improved over time.
+            </p>
+            <p>
+                To turn this off, under the <strong>Chat</strong> menu, inside the <strong>Completer Mode</strong>.
+            </p>
+            <h2>
+                Show Completions Automatically
+            </h2>
+            <p>
+                If the built-in spell/grammar checker detects you have an error, Mavis can automatically trigger the completer when you try to speak something that likely won't make perfect sense. This is useful as long as the builtin dictionary match the words you normally use. This is on by default, but can be turned off via the <strong>Show Completions Automatically</strong> item in the <strong>Chat</strong> menu.
+            </p>
+        </main>
+        <footer>
+            <p>
+                ©2025 Lazy Bear Labs LLC
+            </p>
+        </footer>
+    </body>
+</html>
