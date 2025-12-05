@@ -18,6 +18,8 @@
   --gray6-dark: rgb(28, 28, 30);
 
   --lbl-font-family: verdana, sans-serif;
+  --lbl-color-jersey-blue: #2484C6;
+  --lbl-color-jersey-buff: #FFCA66;
   --lbl-color-blue: #224A78;
   --lbl-mobile-width: 600px;
   --lbl-radius-default: 0.5rem;
