@@ -16,10 +16,12 @@
   --gray5-dark: rgb(44, 44, 46);
   --gray6-light: rgb(242, 242, 247);
   --gray6-dark: rgb(28, 28, 30);
+  --gray7-light: #f8f8fa;
 
   --lbl-font-family: verdana, sans-serif;
   --lbl-color-jersey-blue: #2484C6;
   --lbl-color-jersey-buff: #FFCA66;
+  --lbl-color-culater-blue: #304975;
   --lbl-color-blue: #224A78;
   --lbl-mobile-width: 600px;
   --lbl-radius-default: 0.5rem;
@@ -46,11 +48,11 @@ header {
   margin: 1rem;
 }
 
-nav {
+header nav {
   display: flex;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
 
   display: flex;
@@ -60,7 +62,7 @@ nav ul {
   gap: 1.5rem;
 }
 
-nav ul li {
+header nav ul li {
   display: flex;
 }
 
@@ -81,6 +83,56 @@ nav a.active {
 nav a:hover,
 nav a:focus {
   text-decoration: underline;
+}
+
+.toc {
+  background: var(--gray7-light);
+  border: 1px solid var(--gray4-light);
+  border-radius: var(--lbl-radius-default);
+  padding: 1rem;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1.5rem;
+}
+
+.toc li {
+  padding-left: 0;
+  margin: 0.5em 0;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.appstore-button.button {
+  min-width: 120px;
+  min-height: 40px;
+}
+
+/* Float right on wider screens to make it more readable. */
+@media (min-width: 600px) {
+
+  aside,
+  .sidebar {
+    width: 33.33%;
+    float: right;
+  }
+
+  .toc {
+    margin: 1rem;
+  }
 }
 
 main {
@@ -163,6 +215,32 @@ main blockquote {
   margin-left: 1em;
 }
 
+main img {
+  margin: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+img.center {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+@media (max-width: 600px) {
+  main img {
+    margin: 0.5rem auto;
+  }
+
+  /* Handle mobile devices / narrow layout */
+  .product {
+    flex-direction: column;
+  }
+
+  .product>div {
+    margin: 0;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
 
   /* This is a hack, it might be eventually better to just to swap the color variables. */
@@ -232,16 +310,21 @@ input:user-invalid {
   padding: calc(0.5rem - 1px);
 }
 
+.button,
 button {
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 0.5rem 1rem;
   min-width: 6rem;
+  font-family: var(--lbl-font-family);
   font-size: 1rem;
+  text-decoration: none;
   background: var(--lbl-color-blue);
   color: white;
   border: none;
+  display: inline-block;
   border-radius: var(--lbl-radius-default);
   cursor: pointer;
+  line-height: normal;
 }
 
 button:disabled {

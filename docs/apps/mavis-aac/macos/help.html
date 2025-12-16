@@ -51,7 +51,7 @@
                             <a href="#tab-completion">Tab Completion</a>
                         </li>
                         <li>
-                            <a href="#phone-and-facetime">Phone and FaceTime</a>
+                            <a href="#facetime-calls">FaceTime Calls</a>
                         </li>
                         <li>
                             <a href="#speak-sentences-automatically">Speak Sentences Automatically</a>
@@ -69,6 +69,9 @@
                             <a href="#ring-bell">Ring Bell</a>
                         </li>
                         <li>
+                            <a href="#sms-button-macos-only">SMS Button (MacOS only)</a>
+                        </li>
+                        <li>
                             <a href="#settings">Settings</a>
                             <ul>
                                 <li>
@@ -78,25 +81,32 @@
                                     <a href="#sound-effects">Sound Effects</a>
                                 </li>
                                 <li>
-                                    <a href="#input">Input</a>
-                                </li>
-                                <li>
-                                    <a href="#display">Display</a>
+                                    <a href="#adjusting-the-font-size">Adjusting The Font Size</a>
                                 </li>
                                 <li>
                                     <a href="#configuration">Configuration</a>
                                     <ul>
                                         <li>
-                                            <a href="#soundbiteszip">soundbites.zip</a>
-                                        </li>
-                                        <li>
-                                            <a href="#removing-soundbites">Removing Soundbites</a>
+                                            <a href="#soundbites-1">soundbites</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#export">Export</a>
-                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#open-script-macos-only">Open Script (MacOS Only)</a>
+                        </li>
+                        <li>
+                            <a href="#enable-corrector-macos-only">Enable Corrector (MacOS Only)</a>
+                            <ul>
+                                <ul>
+                                    <li>
+                                        <a href="#show-corrections-automatically">Show Corrections Automatically</a>
+                                    </li>
+                                    <li>
+                                        <a href="#corrector-goals">Corrector Goals</a>
+                                    </li>
+                                </ul>
                             </ul>
                         </li>
                     </ul>
@@ -142,7 +152,7 @@
                 The last 10 phrases are remembered and you can quickly access them using the <strong>Command</strong> key ⌘ and up ↑ and down ↓ arrow keys.
             </p>
             <p>
-                Swiping items in the history list will allow you to delete a history item.
+                ⌘Delete will remove the currently selected history item.
             </p>
             <p>
                 All the standard Mac keyboard tricks work - for instance ⌘A will select all text and you can then delete it all with the <strong>Delete</strong> key. That will let you quickly start over.
@@ -192,7 +202,7 @@
                 All of those match some fragment, but the last one matches “best” and would be selected automatically.
             </p>
             <p>
-                When the completion menu is showing, you can navigate the completion choices with the up <strong>↑</strong> and down <strong>↓</strong> arrow keys, or press the <strong>Tab</strong> and <strong>Shift-Tab</strong>.
+                When the completion menu is showing, you can navigate the completion choices with the up <strong>↑</strong> and down <strong>↓</strong> arrow keys.
             </p>
             <p>
                 The first press of the <strong>Return</strong> key will accept the current highlighted completion, and a second press of <strong>Return</strong> will speak the text aloud.
@@ -208,14 +218,17 @@
             <p>
                 When there is nothing typed, <strong>Tab</strong> brings up a list of all phrases and soundbites.
             </p>
-            <h1 id="phone-and-facetime">
-                Phone and FaceTime
+            <h1 id="facetime-calls">
+                FaceTime Calls
             </h1>
             <p>
-                If you are on a call, Mavis is ready to help and you can speak with both your voice and the synthesizer.
+                If you are on a FaceTime call, you can add Mavis AAC to the call so you can speak with both your voice and the synthesizer.
             </p>
             <p>
-                Soundbites do not work over FaceTime/Phone calls. When a call is active, soundbites will be synthesized rather than played back from the recordings.
+                Go to the <strong>Chat</strong> menu and select <strong>Start SharePlay</strong>. SharePlay is the name of a FaceTime feature that allows you to share a window on your computer with the person you are talking to.
+            </p>
+            <p>
+                Though this works on MacOS, it is much better supported on iOS devices.
             </p>
             <h1 id="speak-sentences-automatically">
                 Speak Sentences Automatically
@@ -230,7 +243,7 @@
                 Fixing Pronunciations
             </h1>
             <p>
-                Under the <strong>Settings</strong> menu select <strong>Edit Pronunciations…</strong>.
+                Under the <strong>Window</strong> menu select <strong>Edit Pronunciations</strong>.
             </p>
             <p>
                 Each line of this file corrects the pronunciation of a word.
@@ -300,6 +313,12 @@ thx|thanks
             <p>
                 The volume of the ring can be adjusted in the <strong>Settings</strong>.
             </p>
+            <h1 id="sms-button-macos-only">
+                SMS Button (MacOS only)
+            </h1>
+            <p>
+                The SMS button sends a pre-composed message via Apple Messages to get someone’s attention. This may be delayed for a while, or not arrive - it’s just sending a text message. The recipient and message are controlled in <strong>Settings</strong>.
+            </p>
             <h1 id="settings">
                 Settings
             </h1>
@@ -318,23 +337,11 @@ thx|thanks
             <p>
                 Adjust the volume of various sound effect.
             </p>
-            <h2 id="input">
-                Input
+            <h2 id="adjusting-the-font-size">
+                Adjusting The Font Size
             </h2>
             <p>
-                Adjust how keyboard input is handled.
-            </p>
-            <p>
-                Minimum Return Key Delay is the to help prevent accidental double presses of the return key.
-            </p>
-            <h2 id="display">
-                Display
-            </h2>
-            <p>
-                You can adjust the size of the font in the compose box to make it easier for you or others to read.
-            </p>
-            <p>
-                You can also adjust how long the display will stay awake when using the app to speak.
+                Use the <strong>Font</strong> menu and the aptly named <strong>Bigger</strong> and <strong>Smaller</strong> options to adjust your font size so you can use it easily.
             </p>
             <h2 id="configuration">
                 Configuration
@@ -345,32 +352,62 @@ thx|thanks
             <p>
                 <strong>Import File</strong> allows you to import several different special files that you have saved on your device.
             </p>
-            <h3 id="soundbiteszip">
-                soundbites.zip
+            <h3 id="soundbites-1">
+                soundbites
             </h3>
             <p>
-                This zip archive can contain any number of sound files that are in the <code>.wav</code> or <code>.m4a</code> formats. The importer uses the name of each file in the zip archive as the exact text to use when matching a soundbite.
+                <strong>Show Soundsbites</strong> under <strong>Window</strong> will open the directory where you can place soundbite files.
+            </p>
+            <p>
+                Any number of sound files that are in the <code>.wav</code> or <code>.m4a</code> formats can be placed here. The name of each file will be used as the text to use when matching a soundbite. The matching is not case sensitive, but punctuation matters.
             </p>
             <p>
                 For instance <code>Hello.wav</code> and <code>Hello!.wav</code> could be distinct entries. Typing “hello” would only match the first. “hello!” would only match the second.
             </p>
-            <h3 id="removing-soundbites">
-                Removing Soundbites
+            <h1 id="open-script-macos-only">
+                Open Script (MacOS Only)
+            </h1>
+            <p>
+                This is a very simple and rough feature that allows you to stage a conversation ahead of time to save time typing. This has been used for either phone calls or in-person conversations with a doctor.
+            </p>
+            <p>
+                You can paste in series of paragraphs. Right-clicking on a line will let you speak it aloud.
+            </p>
+            <p>
+                It is not a full featured editor and there is no undo support. This is not necessarily a good place to compose your conversation, though it is possible to do so.
+            </p>
+            <h1 id="enable-corrector-macos-only">
+                Enable Corrector (MacOS Only)
+            </h1>
+            <p>
+                The corrector is a small-ish neural network that tries to turn keyboard input with typos into something approximating human speech when you press the Tab key.
+            </p>
+            <p>
+                This currently replaces the default tab complete feature when enabled, though this could be easily adjusted.
+            </p>
+            <p>
+                It will generate up to 5 candidate corrections in approximately one second. Experiments show that is has a reasonble chance of offering the correct answer. This is an area of interest and potential improvement.
+            </p>
+            <p>
+                It is not enabled by default because it is not always correct and not clearly of value in all cases, particularly if typing/motor skills are reasonable.
+            </p>
+            <p>
+                You can turn this feature on/off under the <strong>Chat</strong> menu using the <strong>Enable Corrector</strong> menu option.
+            </p>
+            <h3 id="show-corrections-automatically">
+                Show Corrections Automatically
             </h3>
             <p>
-                If you find yourself wanting to remove a particular soundbite, you can use the <strong>File</strong> app to go into <code>On My iPad</code> > <code>Mavis AAC</code> > <code>soundbites</code> and delete the file from your device.
+                If the built-in spell/grammar checker detects you have an error, Mavis can automatically trigger the correct when you try to speak something that likely won’t make perfect sense.
             </p>
             <p>
-                This can also be opened via “Show Soundbites…” in the Settings.
+                This is useful as long as the builtin dictionary match the words you normally use. This is on by default if you enable the corrector, but it can be turned off separately via the <strong>Show Corrections Automatically</strong> menu item in the <strong>Chat</strong> menu.
             </p>
-            <h2 id="export">
-                Export
-            </h2>
+            <h3 id="corrector-goals">
+                Corrector Goals
+            </h3>
             <p>
-                This lets you send logged chats via Apple’s sharing mechanisms to do some analysis. This mechanism was used to help train early versions of the text correction engine and collect data about patterns of typos or other systematic typing errors.
-            </p>
-            <p>
-                For this to be useful, chat logging must be enabled beforehand. This feature is obviously disabled by default to preserve privacy.
+                This feature evolved from observing our first user. As progressive loss of motor control led to both increased typos and increased correction time, the goal was provide a reasonable chance (>70%) of correction within a couple of simple keystrokes to prevent frustration.
             </p>
         </main>
         <footer>
